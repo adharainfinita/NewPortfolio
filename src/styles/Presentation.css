@@ -1,0 +1,8 @@
+#presentation-image {
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  border: 4px solid var(--gray-own);
+  border-radius: 0.5rem;
+}
+

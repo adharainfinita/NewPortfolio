@@ -1,0 +1,8 @@
+.project-images {
+  width: 30vw;
+  height: auto;
+}
+
+.project-images:hover {
+  width: 50vw;
+}

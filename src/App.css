@@ -1,0 +1,29 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.sections-standar {
+  width: 80%;
+  height: auto;
+  background: linear-gradient(to bottom right, var(--light-ocean), var(--light-ciel));
+  border: 4px solid var(--gray-own);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 8rem 0;
+  padding: 3rem;
+  border-radius: 0.5rem;
+}
+
+.horizontal-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1%;
+}
+
