@@ -20,7 +20,7 @@ Aquí están algunas de las habilidades y tecnologías con las que trabajo:
 
 A continuación, encontrarás algunos de mis proyectos destacados:
 
-- **[Proyecto 1](¿https://github.com/adharainfinita/facil-market-cdu-platform)**: Una breve descripción del proyecto 1.
+- **[Proyecto 1](https://github.com/adharainfinita/facil-market-cdu-platform)**: Una breve descripción del proyecto 1.
 - **[Proyecto 2](https://github.com/adharainfinita/facil-market-proyect)**: Una breve descripción del proyecto 2.
 - **[Proyecto 3](https://github.com/adharainfinita/my-books-page)**: Una breve descripción del proyecto 3.
 
