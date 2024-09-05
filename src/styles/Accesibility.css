@@ -1,0 +1,58 @@
+/* Contenedor principal de accesibilidad */
+.accesibility-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem; /* Para py-2 */
+}
+
+/* Botón para cambiar el tema */
+.theme-button {
+  border-radius: 9999px; /* Para rounded-full */
+  width: 3rem; /* Para w-12 */
+  height: 3rem; /* Para h-12 */
+  background-color: var(--ciel);
+  border: 2px solid var(--light-purple);
+  transition: background-color 0.3s;
+  margin: 0 0.25rem; /* Para mx-1 */
+}
+
+.theme-button.dark {
+  border: none;
+  background-color: var(--purple);
+}
+
+.theme-button:hover {
+  background-color: var(--light-purple);
+}
+
+/* Icono en el botón de tema */
+.theme-button-icon {
+  height: 1.5rem; /* Para ajustar el tamaño del icono */
+  width: 1.5rem; /* Para ajustar el tamaño del icono */
+}
+
+/* Botón para cambiar el idioma */
+.language-button {
+  background-color: var(--ciel);
+  border: 2px solid var(--light-purple);
+  border-radius: 9999px; /* Para rounded-full */
+  width: 3rem; /* Para w-12 */
+  height: 3rem; /* Para h-12 */
+  transition: background-color 0.3s;
+  margin: 0 0.25rem; /* Para mx-1 */
+}
+
+.language-button.dark {
+  background-color: var(--purple);
+  border: none;
+}
+
+.language-button:hover {
+  background-color: var(--light-purple);
+}
+
+/* Texto en el botón de idioma */
+.language-button-text {
+  font-size: 0.875rem; /* Para text-sm */
+  font-family: 'Poppins', sans-serif; /* Para font-Poppins */
+}

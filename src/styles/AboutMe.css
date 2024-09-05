@@ -1,0 +1,29 @@
+.aboutMe-text {
+  font-family: monospace;
+  font-size: 1rem;
+  text-align: left;
+  white-space: wrap; /* Evita que el texto haga saltos de línea */
+  overflow: hidden;    /* Oculta el texto que exceda el tamaño del contenedor */
+  width: 100%;         /* Asegura que ocupe todo el ancho del contenedor */
+  box-sizing: border-box; /* Incluye el padding dentro del ancho total */
+}
+
+
+.aboutMe-container {
+  width: 100%;         /* Ancho máximo del contenedor */
+  max-width: 80%;    /* Controla el ancho máximo del contenedor */
+  margin: 0 auto;      /* Centra el contenedor horizontalmente */
+  padding: 2rem;
+  border-radius: 8px;
+  overflow: hidden;    /* Oculta cualquier desbordamiento */
+  position: relative;  /* Para efectos futuros, si es necesario */
+}
+
+.typing-active {
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}

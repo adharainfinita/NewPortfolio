@@ -1,8 +1,27 @@
 #presentation-image {
-  width: 60%;
+  width: 100%;
   height: auto;
-  margin: 0 auto;
   border: 4px solid var(--gray-own);
   border-radius: 0.5rem;
 }
 
+#button-image {
+  width: 60%;
+}
+
+#presentation-text {
+  color: rgb(28 25 23 );
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: bold;
+  font-family: 'Poppins', cursive, sans-serif;
+
+}
+
+#description-text {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  background-color: var(--light-pink);
+  border-bottom-width: 1px;
+  font-family: Titillium Web,bold;
+}

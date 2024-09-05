@@ -1,0 +1,45 @@
+#skills-div {
+  text-align: left;
+}
+
+.tecnologies-titles {
+  text-wrap: nowrap;
+}
+.tecnologies-titles:hover {
+  background-color: var(--light-purple);
+}
+
+.soft-skills {
+  font-weight: 100;
+  color: var(--violet-ocean);
+}
+.soft-skills:hover{
+  color: var(--ciel);
+  font-weight: 400;
+  font-style: normal;
+  animation: pulse 1.5s infinite;
+}
+
+.icon-img {
+  padding: 5%;
+  width: 100px;  
+  height: 100px; 
+  max-width: 100%;  /* Asegura que no exceda el contenedor */
+  max-height: 100%; /* Asegura que no exceda el contenedor */
+  object-fit: contain; /* Mantiene el aspecto original del SVG */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
