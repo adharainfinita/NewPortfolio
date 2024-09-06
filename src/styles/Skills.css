@@ -4,10 +4,16 @@
 
 .tecnologies-titles {
   text-wrap: nowrap;
-  
 }
+
 .tecnologies-titles:hover {
   background-color: var(--light-purple);
+}
+
+.tecnologies-titles.dark {
+  background: linear-gradient(to bottom right, var(--background), rgb(39, 36, 36));
+  border: 1px solid var(--gray-own);
+  color: var(--light-purple);
 }
 
 .soft-skills {
@@ -21,7 +27,13 @@
   animation: pulse 1.5s infinite;
 }
 
+.soft-skills.dark {
+  color:var(--gray-own);
+}
 
+h4.dark {
+  color: grey;
+}
 
 @keyframes pulse {
   0% {

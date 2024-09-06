@@ -1,6 +1,7 @@
 .project-images {
   width: 30vw;
   height: auto;
+  border-radius: 5%;
 }
 
 .project-images:hover {
@@ -25,4 +26,16 @@ h3 {
 .p-projects {
   font-family: Poppins;
  width: 70%;
+}
+
+.p-projects.dark {
+  background: linear-gradient(to bottom right, var(--background), rgb(39, 36, 36));
+  border: 1px solid var(--gray-own);
+  color: rgb(124, 121, 121)
+}
+
+.projects-titles.dark {
+  color: var(--light-purple);
+  border-bottom: 1px solid var(--gray-own);
+  border-top: 1px solid var(--gray-own);
 }

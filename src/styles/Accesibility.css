@@ -20,6 +20,7 @@
 .theme-button.dark {
   border: none;
   background-color: var(--purple);
+  color: white
 }
 
 .theme-button:hover {
@@ -46,6 +47,7 @@
 .language-button.dark {
   background-color: var(--purple);
   border: none;
+  color: white
 }
 
 .language-button:hover {

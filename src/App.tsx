@@ -12,7 +12,7 @@ import { EN_translations } from "./translations/en";
 import AccesibilityComponent from "./components/Accesibility";
 
 function App() {
-	const [theme, setTheme] = useState("dark");
+	const [theme, setTheme] = useState("light");
 	const [language, setLanguage] = useState<"es" | "en">("es");
 	const translations = language === "es" ? SP_translations : EN_translations;
 

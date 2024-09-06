@@ -33,7 +33,7 @@ const Skills: React.FC<TranslationsProps> = ({ translations }) => {
 			<ul id="skills-div">
 				<li>
 					<aside className="horizontal-section">
-						<h4>{translations.tecnologies}</h4>
+						<h4 className={`titles-list ${theme === 'dark' ? 'dark': ""}`}>{translations.tecnologies}</h4>
 						<button
 							onClick={() => {
 								handleButtonIcons("front");
@@ -42,7 +42,7 @@ const Skills: React.FC<TranslationsProps> = ({ translations }) => {
 							{showIcon === "front" ? (
 								<Slider icons={front} />
 							) : (
-								<p className="tecnologies-titles">/Frontend/</p>
+							<p className={`tecnologies-titles ${theme==="dark"? "dark" : ""}`}>/Frontend/</p>
 							)}
 						</button>
 						<button
@@ -53,7 +53,7 @@ const Skills: React.FC<TranslationsProps> = ({ translations }) => {
 							{showIcon === "back" ? (
 								<Slider icons={back} />
 							) : (
-								<p className="tecnologies-titles">/Backend/</p>
+								<p className={`tecnologies-titles ${theme==="dark"? "dark" : ""}`}>/Backend/</p>
 							)}
 						</button>
 						<button
@@ -64,7 +64,7 @@ const Skills: React.FC<TranslationsProps> = ({ translations }) => {
 							{showIcon === "db" ? (
 								<Slider icons={db} />
 							) : (
-								<p className="tecnologies-titles">/{translations.databases}/</p>
+								<p className={`tecnologies-titles ${theme==="dark"? "dark" : ""}`}>/{translations.databases}/</p>
 							)}
 						</button>
 						<button
@@ -75,23 +75,23 @@ const Skills: React.FC<TranslationsProps> = ({ translations }) => {
 							{showIcon === "other" ? (
 								<Slider icons={other} />
 							) : (
-								<p className="tecnologies-titles">/{translations.other}/</p>
+								<p className={`tecnologies-titles ${theme==="dark"? "dark" : ""}`}>/{translations.other}/</p>
 							)}
 						</button>
 					</aside>
 				</li>
 				<li>
 					<div className="horizontal-section">
-						<h4>{translations.softSkills}</h4>
-						<ul className="soft-skills">Capacidad crítica</ul>
-						<ul className="soft-skills">Productividad</ul>
-						<ul className="soft-skills">Aprendizaje continuo</ul>
-						<ul className="soft-skills">Efectividad y agilidad</ul>
+						<h4 className={`titles-list ${theme === 'dark' ? 'dark': ""}`}>{translations.softSkills}</h4>
+						<ul className={`soft-skills ${theme ==="dark" ? "dark" : ""}`}>Capacidad crítica</ul>
+						<ul className={`soft-skills ${theme ==="dark" ? "dark" : ""}`}>Productividad</ul>
+						<ul className={`soft-skills ${theme ==="dark" ? "dark" : ""}`}>Aprendizaje continuo</ul>
+						<ul className={`soft-skills ${theme ==="dark" ? "dark" : ""}`}>Efectividad y agilidad</ul>
 					</div>
 				</li>
 				<li>
 					<div className="horizontal-section">
-						<h4>{translations.roadmap}</h4>
+						<h4 className={`titles-list ${theme === 'dark' ? 'dark': ""}`}>{translations.roadmap}</h4>
 						<img className="icon-img" src={roadmap[0][1]} alt="icon1" title={roadmap[0][0]} />
 						<img className="icon-img" src={roadmap[1][1]} alt="icon2" title={roadmap[1][0]} />
 						<img className="icon-img" src={roadmap[2][1]} alt="icon3" title={roadmap[2][0]}/>
