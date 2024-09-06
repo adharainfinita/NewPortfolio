@@ -18,9 +18,9 @@ const Presentation: React.FC<TranslationsProps> = ({
 		<div className={`sections-standar ${theme === "dark" ? "dark" : ""}`}>
 			<h1 className={`${theme === "dark" ? "dark" : ""}`}>Adhara Redruello</h1>
 			<section className="horizontal-section">
-				<p id={`presentation-text${theme === "dark" ? "dark" : ""}`}>
+				<p className={`presentation-text${theme === "dark" ? " dark" : ""}`}>
 					{translations.title}
-				<h5 id={`description-text${theme === "dark" ? "dark" : ""}`}>{translations.description}</h5>
+				<h5 className={`description-text ${theme === "dark" ? "dark" : ""}`}>{translations.description}</h5>
 				</p>
 				<button
 					id="button-image"
@@ -33,7 +33,7 @@ const Presentation: React.FC<TranslationsProps> = ({
 								: "https://res.cloudinary.com/dlbhecdey/image/upload/v1725374845/DALL_E_2024-09-03_11.46.02_-_Pixel_art_of_a_girl_with_short_copper-colored_hair_and_brown_eyes_wearing_glasses_and_holding_a_laptop_in_her_hands._She_is_a_developer_and_the_set_bgmuv3.webp"
 						}
 						alt="profile-image"
-						id="presentation-image"
+						className={`presentation-image ${theme === "dark" ? "dark" : ""}`}
 					/>
 				</button>
 			</section>

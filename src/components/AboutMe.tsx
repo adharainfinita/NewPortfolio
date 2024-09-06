@@ -21,7 +21,7 @@ const AboutMe: React.FC<TranslationsProps> = ({translations}) => {
 	
 		}, [index, text]);
 
-		return <p className="aboutMe-text">{displayedText}</p>;
+		return <p className={`aboutMe-text ${theme ==='dark'?'dark': ""}`}>{displayedText}</p>;
 	}
 	
 	return (

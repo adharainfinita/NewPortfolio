@@ -4,6 +4,7 @@
 
 .tecnologies-titles {
   text-wrap: nowrap;
+  
 }
 .tecnologies-titles:hover {
   background-color: var(--light-purple);
@@ -20,14 +21,7 @@
   animation: pulse 1.5s infinite;
 }
 
-.icon-img {
-  padding: 5%;
-  width: 100px;  
-  height: 100px; 
-  max-width: 100%;  /* Asegura que no exceda el contenedor */
-  max-height: 100%; /* Asegura que no exceda el contenedor */
-  object-fit: contain; /* Mantiene el aspecto original del SVG */
-}
+
 
 @keyframes pulse {
   0% {

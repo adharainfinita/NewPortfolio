@@ -7,7 +7,7 @@ import { frontIcons } from "../icons/front";
 import { backIcons } from "../icons/back";
 import { dbIcons } from "../icons/db";
 import { otherIcons } from "../icons/other";
-import { roadmapIcons } from "../icons/roadmap";
+import {roadmapIcons} from "../icons/roadmap";
 
 const Skills: React.FC<TranslationsProps> = ({ translations }) => {
 	const { theme } = useGlobalContext();
@@ -16,6 +16,14 @@ const Skills: React.FC<TranslationsProps> = ({ translations }) => {
 	const handleButtonIcons = (iconType: string) => {
 		setShowIcon(iconType);
 	};
+
+	//extraemos las claves-valor en un array de array; la clave será el titulo y el valor el icono
+	const roadmap = Object.entries(roadmapIcons);
+	const front = Object.entries(frontIcons);
+	const back = Object.entries(backIcons);
+	const db = Object.entries(dbIcons);
+	const other = Object.entries(otherIcons);
+
 
 	return (
 		<section className={`sections-standar ${theme === "dark" ? "dark" : ""}`}>
@@ -32,7 +40,7 @@ const Skills: React.FC<TranslationsProps> = ({ translations }) => {
 							}}
 						>
 							{showIcon === "front" ? (
-								<Slider icons={frontIcons} />
+								<Slider icons={front} />
 							) : (
 								<p className="tecnologies-titles">/Frontend/</p>
 							)}
@@ -43,7 +51,7 @@ const Skills: React.FC<TranslationsProps> = ({ translations }) => {
 							}}
 						>
 							{showIcon === "back" ? (
-								<Slider icons={backIcons} />
+								<Slider icons={back} />
 							) : (
 								<p className="tecnologies-titles">/Backend/</p>
 							)}
@@ -54,7 +62,7 @@ const Skills: React.FC<TranslationsProps> = ({ translations }) => {
 							}}
 						>
 							{showIcon === "db" ? (
-								<Slider icons={dbIcons} />
+								<Slider icons={db} />
 							) : (
 								<p className="tecnologies-titles">/{translations.databases}/</p>
 							)}
@@ -65,7 +73,7 @@ const Skills: React.FC<TranslationsProps> = ({ translations }) => {
 							}}
 						>
 							{showIcon === "other" ? (
-								<Slider icons={otherIcons} />
+								<Slider icons={other} />
 							) : (
 								<p className="tecnologies-titles">/{translations.other}/</p>
 							)}
@@ -84,10 +92,10 @@ const Skills: React.FC<TranslationsProps> = ({ translations }) => {
 				<li>
 					<div className="horizontal-section">
 						<h4>{translations.roadmap}</h4>
-						<img className="icon-img" src={roadmapIcons[0]} alt="icon1" />
-						<img className="icon-img" src={roadmapIcons[1]} alt="icon2" />
-						<img className="icon-img" src={roadmapIcons[2]} alt="icon3" />
-						<img className="icon-img" src={roadmapIcons[3]} alt="icon4" />
+						<img className="icon-img" src={roadmap[0][1]} alt="icon1" title={roadmap[0][0]} />
+						<img className="icon-img" src={roadmap[1][1]} alt="icon2" title={roadmap[1][0]} />
+						<img className="icon-img" src={roadmap[2][1]} alt="icon3" title={roadmap[2][0]}/>
+						<img className="icon-img" src={roadmap[3][1]} alt="icon4" title={roadmap[3][0]}/>
 					</div>
 				</li>
 			</ul>

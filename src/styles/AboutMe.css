@@ -8,6 +8,10 @@
   box-sizing: border-box; /* Incluye el padding dentro del ancho total */
 }
 
+.aboutMe-text.dark {
+  background: linear-gradient(to bottom right, var(--background), rgb(39, 36, 36)) ;
+  border: 1px solid var(--gray-own);
+}
 
 .aboutMe-container {
   width: 100%;         /* Ancho máximo del contenedor */
@@ -17,6 +21,11 @@
   border-radius: 8px;
   overflow: hidden;    /* Oculta cualquier desbordamiento */
   position: relative;  /* Para efectos futuros, si es necesario */
+}
+
+.aboutMe-container.text {
+  background-color: transparent;
+  border: 1px solid var(--gray-own)
 }
 
 .typing-active {

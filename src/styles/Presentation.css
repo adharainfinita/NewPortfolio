@@ -1,15 +1,18 @@
-#presentation-image {
+.presentation-image {
   width: 100%;
   height: auto;
   border: 4px solid var(--gray-own);
   border-radius: 0.5rem;
+}
+.presentation-image.dark {
+  border: none;
 }
 
 #button-image {
   width: 60%;
 }
 
-#presentation-text {
+.presentation-text {
   color: rgb(28 25 23 );
   font-size: 2rem;
   line-height: 2rem;
@@ -18,10 +21,20 @@
 
 }
 
-#description-text {
+.presentation-text.dark {
+  background: linear-gradient(to bottom right, var(--background), rgb(39, 36, 36)) ;
+  border: 1px solid var(--light-ocean);
+}
+
+.description-text {
   font-size: 1.25rem;
   line-height: 1.75rem;
   background-color: var(--light-pink);
   border-bottom-width: 1px;
   font-family: Titillium Web,bold;
+}
+
+.description-text.dark {
+  font-family: Poppins;
+  background-color: transparent
 }
