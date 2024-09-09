@@ -4,6 +4,9 @@
   justify-content: flex-end;
   padding: 0.5rem; /* Para py-2 */
   position: fixed;
+  top: 1rem; /* Alineado en la parte superior */
+  right: 1rem; /* Alineado a la derecha */
+  z-index: 9999; /* Asegúrate de que esté encima de otros elementos */
 }
 
 /* Botón para cambiar el tema */
@@ -20,7 +23,7 @@
 .theme-button.dark {
   border: none;
   background-color: var(--purple);
-  color: white
+  color: white;
 }
 
 .theme-button:hover {
@@ -29,8 +32,8 @@
 
 /* Icono en el botón de tema */
 .theme-button-icon {
-  height: 1.5rem; /* Para ajustar el tamaño del icono */
-  width: 1.5rem; /* Para ajustar el tamaño del icono */
+  height: 1.5rem; /* Ajusta el tamaño del icono */
+  width: 1.5rem;
 }
 
 /* Botón para cambiar el idioma */
@@ -47,7 +50,7 @@
 .language-button.dark {
   background-color: var(--purple);
   border: none;
-  color: white
+  color: white;
 }
 
 .language-button:hover {
@@ -57,5 +60,29 @@
 /* Texto en el botón de idioma */
 .language-button-text {
   font-size: 0.875rem; /* Para text-sm */
-  font-family: 'Poppins', sans-serif; /* Para font-Poppins */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .accesibility-container {
+    flex-direction: column; /* Alinea los botones en columna */
+    right: 0.5rem; /* Ajusta la posición para pantallas pequeñas */
+    top: 0.5rem;
+  }
+
+  .theme-button, .language-button {
+    margin: 0.25rem 0; /* Espaciado vertical entre los botones */
+    width: 2.5rem; /* Reduce el tamaño en pantallas pequeñas */
+    height: 2.5rem;
+  }
+
+  .theme-button-icon {
+    width: 1.25rem; /* Ajusta el tamaño del icono en pantallas pequeñas */
+    height: 1.25rem;
+  }
+
+  .language-button-text {
+    font-size: 0.75rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
+  }
 }

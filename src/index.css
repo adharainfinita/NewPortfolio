@@ -28,10 +28,10 @@
 /* Estilo para el modo claro */
 body {
 	background-color: var(--light-ciel);
-	margin: 0;
+	margin: 0 auto;
 	display: flex;
 	place-items: center;
-	min-width: 320px;
+	min-width: 350px;
 	min-height: 100vh;
 }
 
@@ -64,9 +64,6 @@ h1.dark {
 button {
 	border-radius: 8px;
 	border: 1px solid transparent;
-	font-size: 1em;
-	font-weight: 500;
-	font-family: inherit;
 	background-color: var(--gray-own);
 	cursor: pointer;
 	transition: border-color 0.25s;

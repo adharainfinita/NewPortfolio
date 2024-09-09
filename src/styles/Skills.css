@@ -4,6 +4,8 @@
 
 .tecnologies-titles {
   text-wrap: nowrap;
+  font-size: 100%;
+  width: 50%;
 }
 
 .tecnologies-titles:hover {
@@ -35,6 +37,13 @@ h4.dark {
   color: grey;
 }
 
+aside button {
+  width: 70%;
+  min-width: 70px;
+  margin: 0 auto;
+}
+
+
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -47,5 +56,37 @@ h4.dark {
   100% {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  #skills-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .horizontal-section {
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ajusta el ancho para ocupar el 100% en pantallas pequeñas */
+  }
+  aside button {
+    width: 100%; /* El ancho de cada botón será el 100% del contenedor */
+    max-width: 200px; /* Opcional: Define un máximo para que no sean demasiado grandes */
+    padding: 0.5rem; /* Ajusta el relleno para que se vean bien */
+    margin-bottom: 1rem; /* Espacio entre los botones */
+    text-align: center;
+  }
+
+  .tecnologies-titles,
+  .soft-skills {
+    text-align: center;
+    margin-bottom: 1rem; /* Añade espacio entre los elementos */
+  }
+
+  .icon-img {
+    width: 60px; /* Ajusta el tamaño de los íconos en pantallas pequeñas */
+    height: auto;
   }
 }

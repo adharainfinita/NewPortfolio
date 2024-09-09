@@ -35,6 +35,7 @@ el desarrollo y funcionalidades de la aplicación`,
 		project3: `Una implementación del proyecto academico Marketplace en tiempo real y con funcionalidades añadidas y mejoradas. 
     Busca, encuentra y compra productos de diferentes vendedores`,
 	},
+	linksProyect: ["Repositorio del proyecto", "Video del proyecto📹"],
 	contact: "Contacto",
 	contactSpan: "¿Te ha interesado mi perfil? Encuentrame aquí:",
 };

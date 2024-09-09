@@ -27,6 +27,7 @@ and cards with phrases from the universe that change over time.`,
     project3: `An implementation of the academic Marketplace project in real time and with added and improved functionalities.
 Search, find and buy products from different sellers`  
 	},
+	linksProyect: ["Repository of proyect", "Link to video of proyect📹"],
   contact: "Contact",
   contactSpan: "¿Are you interesed on my profile? Find me here:"
 }

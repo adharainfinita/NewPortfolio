@@ -11,6 +11,7 @@ export interface Translations {
   roadmap: string;
   projects: string;
   projectsContent: object;
+  linksProyect: Array<string>;
   contact: string;
   contactSpan: string;
 }

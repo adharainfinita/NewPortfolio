@@ -7,7 +7,7 @@ const Contact: React.FC<TranslationsProps> = ({ translations }) => {
 		<section className={`sections-standar ${theme === 'dark' ? 'dark' : ''}`}>
 			<h1 className={`titles ${theme === 'dark' ? 'dark' : ''}`}>{translations.contact}</h1>
 			<span>{translations.contactSpan}</span>
-			<div className="horizontal section">
+			<div className="horizontal-section">
 			<a href="mailto:adharanosalevich@gmail.com">
 				<img className="icon-img" src="https://www.svgrepo.com/show/452213/gmail.svg" alt="gmail" />
 			</a>
