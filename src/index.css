@@ -64,7 +64,7 @@ h1.dark {
 button {
 	border-radius: 8px;
 	border: 1px solid transparent;
-	background-color: var(--gray-own);
+	background-color: transparent;
 	cursor: pointer;
 	transition: border-color 0.25s;
 }

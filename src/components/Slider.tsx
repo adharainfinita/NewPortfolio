@@ -13,7 +13,7 @@ const Slider: React.FC<SliderProps> = ({ icons }) => {
       setCurrentIndex((prevIndex) =>
         prevIndex === icons.length - 1 ? 0 : prevIndex + 1
       );
-    }, 700); // Cambia cada 0.5 segundos
+    }, 1000); // Cambia cada 0.5 segundos
 
     // Limpiar el intervalo cuando el componente se desmonta
     return () => clearInterval(interval);
@@ -25,7 +25,7 @@ const Slider: React.FC<SliderProps> = ({ icons }) => {
   return (
     <div className="slider-container">
       <div  className="icon-wrapper"
-        style={{ transform: `translateY(-${currentIndex * 5}%)` }}>
+       >
         <img
         src={url}
         alt={`icon-${currentIndex}`}
