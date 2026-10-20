@@ -1,0 +1,20 @@
+.icon-grid-container {
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(56px, 1fr));
+  align-items: center;
+  justify-items: center;
+  gap: 0.75rem;
+}
+
+.icon-grid-image {
+  width: 56px;
+  height: 56px;
+  padding: 4px;
+  object-fit: contain;
+}

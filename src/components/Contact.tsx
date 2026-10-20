@@ -11,15 +11,10 @@ const Contact: React.FC<TranslationsProps> = ({ translations }) => {
 			<a href="mailto:adharanosalevich@gmail.com">
 				<img className="icon-img" src="https://www.svgrepo.com/show/452213/gmail.svg" alt="gmail" />
 			</a>
-			<a href="">
+			<a href="https://www.linkedin.com/in/adhara-redruello-81a704262/" target="_blank">
 				<img className="icon-img" src="https://www.svgrepo.com/show/448234/linkedin.svg" alt="linkedin" />
 			</a>
-			<a href="">
-				<img className="icon-img" src="https://www.svgrepo.com/show/452229/instagram-1.svg" alt="instagram" />
-			</a>
-			<a href="">
-				<img className="icon-img" src="https://www.svgrepo.com/show/452123/twitter.svg" alt="x.com" />
-			</a>
+
 			</div>
 		</section>
 	);

@@ -36,37 +36,18 @@ const Projects: React.FC<TranslationsProps> = ({ translations }) => {
 				</a>
 			</section>
 			<h3 className={`projects-titles ${theme === "dark" ? "dark" : ""}`}>
-				MyBookPage
+				Bibliotech 2099
 			</h3>
 			<section className="section-projects">
 				<img
 					className="project-images"
-					src="https://res.cloudinary.com/dlbhecdey/image/upload/v1720895259/unknown_2024.07.13-15.11_5_ttz35d.gif"
+					src="https://res.cloudinary.com/dlbhecdey/image/upload/v1792513814/Captura_desde_2026-10-20_13-28-58_rrfxiu.png"
 					alt="project2-image"
 				/>
 				<p className={`p-projects ${theme === "dark" ? "dark" : ""}`}>
 					{values[1] ?? "notFound"}
 				</p>
 				<a href="https://github.com/adharainfinita/my-books-pages" target="_blank">
-					{translations.linksProyect[0]}
-				</a>
-				<a href="https://youtu.be/XQNHgjvIK84?si=0B43sX7N3reWCYrN" target="_blank">
-					{translations.linksProyect[1]}
-				</a>
-			</section>
-			<h3 className={`projects-titles ${theme === "dark" ? "dark" : ""}`}>
-				CdelU Market
-			</h3>
-			<section className="section-projects">
-				<img
-					className="project-images"
-					src="https://res.cloudinary.com/dlbhecdey/image/upload/v1692317595/samples/ecommerce/accessories-bag.jpg"
-					alt="project3-image"
-				/>
-				<p className={`p-projects ${theme === "dark" ? "dark" : ""}`}>
-					{values[2] ?? "notFound"}
-				</p>
-				<a href="https://github.com/adharainfinita/facil-market-cdu-platform" target="_blank">
 					{translations.linksProyect[0]}
 				</a>
 				<a href="https://youtu.be/XQNHgjvIK84?si=0B43sX7N3reWCYrN" target="_blank">

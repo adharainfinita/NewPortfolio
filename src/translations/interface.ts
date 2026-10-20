@@ -8,7 +8,6 @@ export interface Translations {
   databases: string;
   other: string;
   softSkills: string;
-  roadmap: string;
   projects: string;
   projectsContent: object;
   linksProyect: Array<string>;

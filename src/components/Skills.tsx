@@ -2,12 +2,11 @@ import { TranslationsProps } from "../translations/interface";
 import { useGlobalContext } from "../contexts/ThemeContext";
 import "../styles/Skills.css";
 import { useState } from "react";
-import Slider from "./Slider";
+import IconGrid from "./IconGrid";
 import { frontIcons } from "../icons/front";
 import { backIcons } from "../icons/back";
 import { dbIcons } from "../icons/db";
 import { otherIcons } from "../icons/other";
-import {roadmapIcons} from "../icons/roadmap";
 
 const Skills: React.FC<TranslationsProps> = ({ translations }) => {
 	const { theme } = useGlobalContext();
@@ -18,7 +17,6 @@ const Skills: React.FC<TranslationsProps> = ({ translations }) => {
 	};
 
 	//extraemos las claves-valor en un array de array; la clave será el titulo y el valor el icono
-	const roadmap = Object.entries(roadmapIcons);
 	const front = Object.entries(frontIcons);
 	const back = Object.entries(backIcons);
 	const db = Object.entries(dbIcons);
@@ -40,9 +38,9 @@ const Skills: React.FC<TranslationsProps> = ({ translations }) => {
 							}}
 						>
 							{showIcon === "front" ? (
-								<Slider icons={front} />
+								<IconGrid icons={front} />
 							) : (
-							<p className={`tecnologies-titles ${theme==="dark"? "dark" : ""}`}>/Frontend/</p>
+							<p className={`tecnologies-titles ${theme==="dark"? "dark" : ""}`}>Frontend</p>
 							)}
 						</button>
 						<button
@@ -51,9 +49,9 @@ const Skills: React.FC<TranslationsProps> = ({ translations }) => {
 							}}
 						>
 							{showIcon === "back" ? (
-								<Slider icons={back} />
+								<IconGrid icons={back} />
 							) : (
-								<p className={`tecnologies-titles ${theme==="dark"? "dark" : ""}`}>/Backend/</p>
+								<p className={`tecnologies-titles ${theme==="dark"? "dark" : ""}`}>Backend</p>
 							)}
 						</button>
 						<button
@@ -62,9 +60,9 @@ const Skills: React.FC<TranslationsProps> = ({ translations }) => {
 							}}
 						>
 							{showIcon === "db" ? (
-								<Slider icons={db} />
+								<IconGrid icons={db} />
 							) : (
-								<p className={`tecnologies-titles ${theme==="dark"? "dark" : ""}`}>/{translations.databases}/</p>
+								<p className={`tecnologies-titles ${theme==="dark"? "dark" : ""}`}>{translations.databases}</p>
 							)}
 						</button>
 						<button
@@ -73,9 +71,9 @@ const Skills: React.FC<TranslationsProps> = ({ translations }) => {
 							}}
 						>
 							{showIcon === "other" ? (
-								<Slider icons={other} />
+								<IconGrid icons={other} />
 							) : (
-								<p className={`tecnologies-titles ${theme==="dark"? "dark" : ""}`}>/{translations.other}/</p>
+								<p className={`tecnologies-titles ${theme==="dark"? "dark" : ""}`}>{translations.other}</p>
 							)}
 						</button>
 					</aside>
@@ -87,15 +85,6 @@ const Skills: React.FC<TranslationsProps> = ({ translations }) => {
 						<ul className={`soft-skills ${theme ==="dark" ? "dark" : ""}`}>Productividad</ul>
 						<ul className={`soft-skills ${theme ==="dark" ? "dark" : ""}`}>Aprendizaje continuo</ul>
 						<ul className={`soft-skills ${theme ==="dark" ? "dark" : ""}`}>Efectividad y agilidad</ul>
-					</div>
-				</li>
-				<li>
-					<div className="horizontal-section">
-						<h4 className={`titles-list ${theme === 'dark' ? 'dark': ""}`}>{translations.roadmap}</h4>
-						<img className="icon-img" src={roadmap[0][1]} alt="icon1" title={roadmap[0][0]} />
-						<img className="icon-img" src={roadmap[1][1]} alt="icon2" title={roadmap[1][0]} />
-						<img className="icon-img" src={roadmap[2][1]} alt="icon3" title={roadmap[2][0]}/>
-						<img className="icon-img" src={roadmap[3][1]} alt="icon4" title={roadmap[3][0]}/>
 					</div>
 				</li>
 			</ul>
